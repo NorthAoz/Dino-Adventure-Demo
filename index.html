@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dino Adventure</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;background:#101810;color:white;
+ font-family:Arial,sans-serif;
+ image-rendering:pixelated
+}
+#app{max-width:1000px;margin:auto;padding:10px}
+header{display:flex;justify-content:space-between;align-items:center}
+h1{font-size:28px;margin:8px 0}
+button{
+ border:0;border-radius:8px;padding:10px 15px;
+ font-weight:bold;background:#e8a72b
+}
+#game{
+ position:relative;width:100%;
+ aspect-ratio:16/9;
+ background:#75b84d;
+ border:5px solid #273b24;
+ overflow:hidden;border-radius:12px
+}
+#canvas{width:100%;height:100%;display:block}
+#ui{
+ margin-top:10px;padding:12px;
+ background:#202c21;border-radius:12px
+}
+.stats{display:flex;gap:18px;flex-wrap:wrap}
+#battle{
+ display:none;position:absolute;inset:0;
+ background:#152016;
+ padding:15px;z-index:10
+}
+.battle{
+ max-width:700px;margin:3% auto;
+ background:#29382a;border:3px solid #81986e;
+ border-radius:14px;padding:18px
+}
+.fighters{
+ display:grid;grid-template-columns:1fr 80px 1fr;
+ text-align:center;align-items:center
+}
+.dino{
+ font-size:70px
+}
+.hp{
+ height:14px;background:#111;
+ border-radius:10px;overflow:hidden
+}
+.hp div{height:100%;background:#52bd5b}
+.actions{
+ display:grid;grid-template-columns:repeat(4,1fr);
+ gap:8px;margin-top:15px
+}
+#message{text-align:center;min
